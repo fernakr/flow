@@ -7,10 +7,10 @@ const md = new MarkdownIt();
 function Control(props){
   const { name, label, value, changeHandler, step, min, max } = props;
   return (
-    <div>
+    <div style={{ marginBottom: '20px'}}>
       <label htmlFor={ name }>{ label }</label>
       <input step={ step } min={ min } max={ max } type="range" defaultValue={ value } onChange={e => changeHandler(e.target.value) }/>
-      <div style={{ backgroundColor: 'yellow', padding: '10px'}}>{ value }</div>
+      <div style={{ backgroundColor: '#ececec', padding: '10px'}}>{ value }</div>
     </div>
   )
 }
