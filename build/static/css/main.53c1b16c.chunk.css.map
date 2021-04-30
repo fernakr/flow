@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,gBACE,oBAAa,CAAb,YACF,CAEA,MACE,aACF","file":"main.53c1b16c.chunk.css","sourcesContent":[".controls, .body{\n  display: flex;\n}\n\nlabel{\n  display: block;\n}\n"]}

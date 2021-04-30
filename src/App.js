@@ -142,7 +142,7 @@ Laboris selfies occaecat umami, forage Tumblr American Apparel. Retro Terry Rich
     for (const selector of headingSelectors){
       const elements = document.querySelectorAll(selector);
       updateElems(elements, currFontSize, 'fontSize', 'px');
-      currFontSize = currFontSize * updatedValue;
+      if (selector.replace('h','') < 4) currFontSize = currFontSize * updatedValue;
     }
 
   }
@@ -197,7 +197,7 @@ Laboris selfies occaecat umami, forage Tumblr American Apparel. Retro Terry Rich
       const elements = document.querySelectorAll(selector);
       updateElems(elements, marginActual, 'marginBottom', 'px');
       updateElems(elements, marginActual, 'marginTop', 'px');
-      currFontSize = currFontSize * scaleFactor;
+      if (selector.replace('h','') < 4) currFontSize = currFontSize * scaleFactor;
     }
 
   }
